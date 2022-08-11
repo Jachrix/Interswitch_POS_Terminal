@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <div class="main_container">
+            <div class="left_div">
+                <div class="left_div_txt">
+                    <h3 class="left_header">More Than a POS Terminal</h3>
+                    <p class="left_header_info1"><small>Introducing the one deveice for all your</small></p>
+                    <p class="left_header_info2"><small>payment needs and more.</small></p>
+                </div>
+                <div><img src="public/images/telpo_pos.jpeg" class="repsonsive" alt=""/></div>
+                <div classroom="left_advert_methods">
+                    <span class="left_advert_methods_txt">
+                        <small>AVAILABLE PAYMENT METHODS</small>
+                    </span>
+                </div>
+                <div  class="left_div_icons">
+                    <div class="left_image_method1">
+                        <img src="public/images/qr_image.png" alt="" class="qr_image"/>
+                    </div>
+                    <div class="left_image_method2">
+                        <img src="public/images/cards_.png" alt="" class="cards_image"/>
+                    </div>
+                    <div class="left_image_method3">
+                        <img src="public/images/ussd_.png" alt="" class="ussd_image"/>
+                    </div>
+                    <div class="left_image_method4">
+                        <img src="public/images/transfer_.jpeg" alt="" class="transfer_image"/>
+                    </div>
+                    <div class="left_image_method5">
+                        <img src="public/images/paycode_.jpeg" alt="" class="paycode_image"/>
+                    </div>
+                </div>
+                <div class="left_div_icons_txt">
+                    <div class="left_div_icons_wrapper_1">
+                        <span class="left_div_icons_txt_1"><small>QR</small></span>
+                    </div>
+                    <div class="left_div_icons_wrapper_2">
+                        <span class="left_div_icons_txt_2"><small>CARDS</small></span>
+                    </div>
+                    <div class="left_div_icons_wrapper_3">
+                        <span class="left_div_icons_txt_3"><small>USSD</small></span>
+                    </div>
+                    <div class="left_div_icons_wrapper_4">
+                        <span class="left_div_icons_txt_4"><small>TRANSFER</small></span>
+                    </div>
+                    <div class="left_div_icons_wrapper_5">
+                        <span class="left_div_icons_txt_5"><small>PAYCODE</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="right_div">
+                <div class="right_div_form_header_wrapper">
+                    <h6 class="right_div_form_header">Your Smart POS is just a Few Clicks Away</h6>
+                    <p class="right_div_form_header_1"><small>Let us help you kick-start the journey that's beyond collecting</small></p>
+                    <p class="right_div_form_header_2"><small>payments, please share your details here.</small></p>
+                </div>
+                <div class="right_div_form">
+                    <form name="myForm" method="POST" class="main_form" onsubmit="return validateForm()">
+                        <section>
+                            <div class="first_name_wrapper">
+                                <label for="first_name" class="right_div_label1">First Name</label>
+                                <input 
+                                    id="first_name" 
+                                    type="text" 
+                                    name="first_name" 
+                                    class="input_pair1"
+                                    placeholder="First Name"
+                                />
+                            </div>
+                            <div class="last_name_wrapper">
+                                <label for="last_name" class="right_div_label2">Last Name</label>
+                                <input 
+                                    id="last_name" 
+                                    type="text" 
+                                    name="last_name" 
+                                    class="input_pair2"
+                                    placeholder="Last Name"
+                                />
+                            </div>
+                            <br style="clear:both;"/>
+                        </section>
+                        <section>
+                            <label for="email" class="right_div_label3">Email Address</label>
+                            <input 
+                                id="email" 
+                                type="email" 
+                                name="email" 
+                                class="input_pair3"
+                                placeholder="Your Email Address"
+                                />
+                            <label for="phone" class="right_div_label4">Phone Number</label>
+                            <input 
+                                id="phone" 
+                                type="tel" 
+                                name="phone" 
+                                class="input_pair4"
+                                placeholder="Phone Number"
+                            />
+                        </section>
+                        <section>
+                            <label for="sell_area" class="right_div_label5">Where Do You Sell?</label>
+                            <select name="sell_area" id="sell_area" class="select_sale_area">
+                                <option value="none">-select-</option>
+                                <option value="Apapa">Apapa</option>
+                                <option value="Eti-osa">Eti-osa</option>
+                                <option value="Surulere">Surulere</option>
+                                <option value="Kosofe">Kosofe</option>
+                            </select>
+                            <label for="bus_type" class="right_div_label6">Business Type</label>
+                            <select name="bus_type" id="bus_type" class="business_type">
+                                <option value="none">-select-</option>
+                                <option value="Fast food">Fast food</option>
+                                <option value="Supermart">Supermart</option>
+                                <option value="Flight Booking">Flight Booking</option>
+                                <option value="Gaming">Gaming</option>
+                            </select>
+                            <label for="turnover" class="right_div_label7">Average Monthly Sales/Turnover</label>
+                            <select name="turnover" id="turnover" class="turnover">
+                                <option value="none">-select-</option>
+                                <option value="10000">10000</option>
+                                <option value="50000">50000</option>
+                                <option value="100000">100000</option>
+                                <option value="120000">12000</option>
+                            </select>
+                        </section>
+                        <div class="inquiry_wrapper">
+                            <p class="inquiry"><small>Will you be interested in integrating a Business Management Software?</small></p>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" class="radio" name="yes" value="yes" id="yes" />
+                            <label for="yes" class="yes_label">Yes</label>
+                            <input type="radio" class="radio" name="yes" value="no" id="no" />
+                            <label for="no" class="no_label">No</label>
+                        </div>
+                        <div class="private_policy">
+                            <input type="checkbox" id="agree" name="agree" value="agree" class="input_checkbox">
+                            <label for="agree" class="agree_label">
+                                <bold class="bold_agreement">I Agree</bold>
+                                <small>to Quickteller Business's <bold class="bold_policy">Private Policy</bold></small>
+                            </label>
+                        </div>
+                        <input type="submit" value="Submit" class="submit_form">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="myscripts.js"></script>
+</html>
